@@ -11,10 +11,6 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		/**
-		 * 1. Напишите программу, которая скопирует файлы с заранее определенным
-		 * 		расширением(например, только doc) из каталога источника в каталог приемник.
-		 */
 		JFileChooser sfc = new JFileChooser();
 		sfc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
 		JFileChooser dfc = new JFileChooser();
@@ -45,11 +41,6 @@ public class Main {
 			System.out.println("Extensions or folders have not been choosed");
 		}
 
-		/**
-		 * 2. Напишите программу, которая примет на вход два текстовых файла, а вернет
-		 * 		один. Содержимым этого файла должны быть слова, которые одновременно есть и в
-		 * 		первом и во втором файле.
-		 */
 
 		sfc.setFileSelectionMode(JFileChooser.FILES_ONLY);
 		sfc.setFileFilter(new javax.swing.filechooser.FileNameExtensionFilter("*.txt", "txt"));
