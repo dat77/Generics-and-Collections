@@ -1,6 +1,5 @@
 package com.gmail.collections;
 
-import java.awt.peer.SystemTrayPeer;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -27,6 +26,9 @@ public class Main {
 		 * Sheldon, Sheldon, Leonard, Leonard]
 		 */
 		testArrayDeque(3);
+		
+		LetterStatistic letStat = new LetterStatistic();
+		System.out.println(letStat);
 
 	}
 
