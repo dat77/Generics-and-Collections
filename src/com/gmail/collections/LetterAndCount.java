@@ -20,6 +20,7 @@ public class LetterAndCount {
 	public void setCount(int count) {
 		this.count = count;
 	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -27,6 +28,7 @@ public class LetterAndCount {
 		result = prime * result + letter;
 		return result;
 	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -40,11 +42,10 @@ public class LetterAndCount {
 			return false;
 		return true;
 	}
+	
 	@Override
 	public String toString() {
-		return "[letter=" + letter + ", count=" + count + "]";
+		return "[" + letter + ", " + count + "]";
 	}
-	
-	
 
 }

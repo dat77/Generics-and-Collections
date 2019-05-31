@@ -1,10 +1,13 @@
 package com.gmail.collections;
 
+import java.io.File;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Deque;
 import java.util.List;
+
+import com.gmail.io.FileHandler;
 
 public class Main {
 
@@ -26,8 +29,15 @@ public class Main {
 		 * Sheldon, Sheldon, Leonard, Leonard]
 		 */
 		testArrayDeque(3);
-		
+
+		/**
+		 * 3) Считайте из файла текст на английском языке, вычислите относительную
+		 * частоту повторения каждой буквы и выведите на экран результат в порядке
+		 * убывания относительной частоты повторения.
+		 */
+
 		LetterStatistic letStat = new LetterStatistic();
+		letStat.countLetter(FileHandler.readFromFile(new File("Lolita.txt")));
 		System.out.println(letStat);
 
 	}
